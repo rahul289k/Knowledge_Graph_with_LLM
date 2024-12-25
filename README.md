@@ -5,6 +5,10 @@ The LLM's natural language understanding (NLU) capabilities will allow users to 
 
 Future enhancements include incorporating machine learning (ML) and deep learning (DL) techniques to enable advanced predictions, role recommendations, and pattern detection and alerts on new addition in any entity.
 
+Design Flow Chart:
+<img width="886" alt="Picture 1" src="https://github.com/user-attachments/assets/76488509-db39-4833-a7e8-b0bbe73418ed" />
+
+
 entity relation examples:
 
 ![visualisation (3)](https://github.com/user-attachments/assets/242d1c7f-54a8-4896-aa4b-39b3d28b5064)
