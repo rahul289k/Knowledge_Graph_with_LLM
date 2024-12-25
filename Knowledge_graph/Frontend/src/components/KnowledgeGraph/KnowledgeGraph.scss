@@ -1,0 +1,79 @@
+.knowledge-graph {
+	position: relative;
+	border: 1px solid #ddd;
+	border-radius: 0.25rem;
+	overflow: hidden;
+	width: inherit;
+	height: inherit;
+
+	.cytoscape-controls {
+		position: absolute;
+		top: 0.625rem;
+		right: 0.625rem;
+		z-index: 10;
+		display: flex;
+		gap: 0.3125rem;
+	}
+
+	.cytoscape-tooltip {
+		background: hsl(var(--primary));
+		font-size: 0.75rem;
+		color: hsl(var(--primary-foreground));
+		padding: 0.625rem;
+		border-radius: 0.25rem;
+		z-index: 1000;
+		pointer-events: none;
+		max-width: 18.75rem;
+		overflow-y: auto;
+		white-space: pre-wrap;
+		word-break: break-word;
+		
+		// Hide scrollbar but keep functionality
+		// &::-webkit-scrollbar {
+		// 	width: 0;
+		// 	height: 0;
+		// }
+		
+		span {
+			font-weight: bold;
+			display: block;
+			margin-bottom: 0.3125rem;
+		}
+		
+		pre {
+			margin: 0;
+			white-space: pre-wrap;
+			word-break: break-word;
+			font-size: 0.7rem;
+		}
+
+		&[data-type="edge"] {
+			max-height: 5rem;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			
+			pre {
+				max-height: 3.5rem;
+				overflow-y: auto;
+				margin: 0;
+			}
+		}
+
+		transition: all 0.1s ease-out;
+	}
+}
+
+.cyper-query {
+	background: hsl(var(--primary));
+	font-size: 0.75rem;
+	color: hsl(var(--primary-foreground));
+	max-width: 20rem;
+	overflow-y: auto;
+	
+	pre {
+		white-space: pre-wrap;
+		word-wrap: break-word;
+		word-break: break-all;
+		margin: 0;
+		padding: 0.5rem;
+	}
+}
